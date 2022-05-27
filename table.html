@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+
+    <style>
+        div{
+            border:2px solid red;
+        }
+        
+        span{
+            border:2px solid blue;
+            
+        }
+    </style>
+
+</head>
+<body>
+    <h1> Table</h1>
+    <h3><a href="index.html">กลับไปหน้า index</a></h3>
+
+
+    <h1>รายการสินค้า</h1>
+    <!-- table สร้างตาราง -->
+    <!-- border กำหนดความหนาของเส้นตาราง -->
+    <!-- width(%) กำหนดความกว้างของตาราง -->
+    <!-- cellpadding ขยายพท.จากข้างในทั้งหมดของตาราง -->
+    <!-- cellspacing ขยายพท.คอบตาราง -->
+    <table border="1" bgcolor="pink" width="100%" cellpadding="20" cellspacing="20"> 
+        
+        <!-- thead กำหนดเนื้อหาส่วนหัวตาราง -->
+        <thead>
+            <!-- th(กำหนดคอลัมน์ที่แสดงผลในส่วนหัวของตาราง) -->
+            <th bgcolor="green">รหัสสินค้า</th>
+            <th>ภาพสินค้า</th>
+            <th>ชื่อสินค้า</th>
+            <th>ราคา</th>
+            <th>ดำเนินการสั่งซื้อ</th>
+        </thead>
+        
+        <!-- tbody กำหนดเนื้อหาตาราง -->
+        <!-- align กำหนดตำแหน่งรูปภาพ, อักษร : center, left, right -->
+        <tbody align="center">
+            <!-- tr(แถว 1) -->
+            <tr bgcolor="yellow">
+                <!-- td(คอลัมน์) คู่กับ th-->
+                <td>001</td>
+                <td>
+                    <img src="https://cdn.pixabay.com/photo/2015/04/07/07/51/papaya-salad-710613__340.jpg" alt=""
+                    width="100px" height="100px">
+                </td>
+                <td>ส้มตำ</td>
+                <td>150.00</td>
+                <!-- rowspan รวม cell row -->
+                <td rowspan="2">
+                    <a href="#">สั่งซื้อ</a>
+                </td>
+            </tr>
+
+            <!-- แถว2 -->
+            <tr>
+                <td>002</td>
+                <td>
+                    <img src="https://media.istockphoto.com/photos/grilled-butchers-choice-steak-onglet-hanging-tender-beef-meat-on-a-picture-id1328122770?b=1&k=20&m=1328122770&s=170667a&w=0&h=p8CgUKXSsVhlLEY0I3gvjSIafi3njMfNia-nsjheCaE=" alt=""
+                    width="100px" height="100px">
+                </td>
+                <td>สเต็ก</td>
+                <td>300.00</td>
+                <!-- <td>
+                    <a href="#">สั่งซื้อ</a>
+                </td> -->
+            </tr>
+        </tbody>
+
+        <!-- tfoot กำหนดเนื้อหาส่วนท้ายตาราง -->
+        <tfoot bgcolor="red" align="right">
+            <tr>
+                <!-- colspan รวม cell colmn -->
+                <td colspan="5"><b>ราคารวม : 450.00</b></td>
+            </tr>
+        </tfoot>
+    </table>
+    <br><hr><hr><br>
+
+    <!-- span (inline) จัดข้อความให้เป็นกลุ่มๆ เพื่อง่ายต่อการทำ style 
+            และกินพท.เท่ากับขนาดข้อความ-->
+    <span style="color:red">
+        <b>span 1</b>
+    </span>
+
+    <span style="color:green">
+       <b>span 2 span 2 span 2 span 2</b>
+    </span>
+
+
+    <!-- div เหมือน span แต่จะขึ้นบรรทัดใหม่ก่อนเริ่มแสดงข้อความใน div 
+            และกินพท.ทั้งบรรทัดของข้อความ-->
+    <div style="color:darkorchid">
+      <strong>div 1</strong></b>
+    </div>
+    
+    <div style="color:darkorange">
+        <strong>div 2</strong>
+    </div>
+
+</body>
+</html>

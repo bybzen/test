@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <meta name="description" content="เว็บเขียนโปรแกรม">
+    <meta name="author" content="Thanakorn">
+    <meta name="keywords" content="html css javascript"> <!--keyword เวลาค้นหา-->
+   
+    <title>Welcome</title>
+</head>
+
+
+<body>
+    <h1>HTML เบื้องต้น</h1>
+    
+    <h1>h1</h1>
+    <h2>h2</h2>
+    <h3>h3</h3>
+    <h4>h4</h4>
+    <h5>h5</h5>
+    <h6>h6</h6>
+
+    <h1>หัวข้อเว็บ</h1>
+
+    <!--tag Paragraphs-->
+    <p>เนื้อหาหน้าเว็บ, รายละเอียด Lorem ipsum dolor sit amet, 
+        consectetur adipisicing elit. Quibusdam, voluptates! 
+        Suscipit facere accusamus nihil aliquam fugit odit, 
+        possimus ratione a doloremque rem sit quod modi nobis 
+        cumque ipsam aliquid cupiditate.</p> 
+
+    <!-- ใช้ร่วมกับ tag p,h ได้ -->
+    <!-- b -->
+    <p><b>ตัวหนา</b></p>
+
+    <!-- strong -->
+    <p><strong>ตัวหนา</strong></p>
+
+    <!-- small -->
+    <p><small>ตัวเล็ก</small></p>
+
+    <!-- i -->
+    <p><i>ตัวเอียง</i></p>
+
+    <!-- u -->
+    <p><u>ขีดเส้นใต้ข้อความ</u></p>
+    
+    <!-- ins -->
+    <p><ins>ขีดเส้นใต้ข้อความ</ins></p>
+
+    <!-- del -->
+    <p><del>ขีดค่าข้อความ</del></p>
+
+    <!-- mark -->
+    <p><mark>highlight ข้อความ</mark></p> 
+
+    <!-- sup -->
+    <h4>เลขยกกำลัง<sup>2</sup></h4>
+
+    <!-- sub -->
+    <h4>เลขห้อย<sub>2</sub></h4>
+
+    <br>
+    <hr> <!-- เส้นคั่น -->
+    <br> <!-- เว้นบรรทัด -->
+    <br>
+    <hr>
+    <br>
+
+    <!-- internal link : เชื่อมโยง link ใน file เดียวกัน-->
+    <!--target = "_blank" จะเปิดแท็บใหม่-->
+    <h1><a href="register.html" target="_blank" >register</a></h1>
+    <hr>
+    <h1><a href="table.html" >table</a></h1>
+    <hr>
+    <h1><a href="folder/classid.html" >Class & Id</a></h1>
+    <hr>
+    <h1><a href="folder/symbols.html" >Symbols & Video</a></h1>
+    <hr>
+
+    <!-- external link : เชื่อมโยง link ภายนอก -->
+    <h1><a href="http://www.google.com" target="_blank">google</a></h1>
+    <hr>
+    <h1><a href="http://www.youtube.com" target="_blank">youtube</a></h1>
+    <hr>
+
+    <!-- internal Pictures-->
+    <p>
+        <a href="folder/classid.html">
+            <img src="image/image1.jpg" alt="image1" width="120px" height="120px">
+        </a>
+        <br>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, enim.
+        <hr>
+    </p>
+
+
+    <!-- external Pictures-->
+    <!-- ใส่ link ในรูปภาพ -->
+    <a href="https://www.google.com/imgres?imgurl=https%3A%2F%2Fimage.api.playstation.com%2Fvulcan%2Fap%2Frnd%2F202106%2F1704%2FJzL1NLQvok7Pghe9W5PP2XNV.png&imgrefurl=https%3A%2F%2Fstore.playstation.com%2Fen-th%2Fproduct%2FHP0177-PPSA03170_00-HINOKAMI00000000&tbnid=1nbd3z-CD0o6YM&vet=12ahUKEwiJv4mP6u33AhU2kNgFHeMsAWAQMygBegUIARCzAQ..i&docid=I9ufSoye0DLhPM&w=1024&h=1024&q=demon%20slayer&ved=2ahUKEwiJv4mP6u33AhU2kNgFHeMsAWAQMygBegUIARCzAQ"
+        target="_blank">
+        <img src="https://image.api.playstation.com/vulcan/ap/rnd/202106/1704/JzL1NLQvok7Pghe9W5PP2XNV.png" 
+        alt="" width="120px" height="120px">
+    </a>
+    <hr><hr><br><br>
+
+
+    <!-- ol ข้อมูลแบบมีลำดับ -->
+    <h3>เดือน</h3>
+    <ol>
+        <li>มกราคม
+            <ul type="disc">
+                <li>วันที่ 20 </li>
+                <li>วันที่ 30 </li>
+            </ul>
+        </li>
+        <li>กุมภาพันธ์</li>
+        <li>มีนาคม</li>
+    </ol>
+
+    <!-- type : A, a, I(เลขโรมัน), i(เลขโรมัน) -->
+    <h3>ช้อย</h3>
+    <ol type="i">
+        <li>15</li>
+        <li>5</li>
+        <li>0</li>
+    </ol>
+    <hr><hr><br><br>
+
+    <!-- ul ข้อมูลแบบไมมีลำดับ -->
+    <h3>รายชื่อ</h3>
+    <ul>
+        <li>zen</li>
+        <li>thanakorn</li>
+    </ul>
+    
+    <!-- type : disc(จุดดำ), circle(วงกลมโปร่ง), square(สี่เหลี่ยมทึบ) -->
+    <h3>จังหวัด</h3>
+    <ul type="square">
+        <li><b> กรุงเทพ </b>
+            <ol>
+                <li>เขต บางเขน</li>
+                <li>เขต ลาดพร้าว</li>
+            </ol>
+        </li>
+
+        <li>กระบี่</li>
+        <li>เชียงใหม่</li>
+
+    </ul>
+    <hr><hr><br><br>
+
+
+
+
+</body>
+</html>

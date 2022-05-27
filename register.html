@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ลงทะเบียน</title>
+
+    <style>
+        div{
+            border:2px solid red;
+        }
+        
+        form{
+            border:5px solid blue;
+            
+        }
+
+        input{
+            border:4px solid yellowgreen;
+        }
+
+    </style>
+
+
+</head>
+
+<body>
+    <h1 align="center">แบบฟอร์มลงทะเบียน</h1>
+    <h3><a href="index.html"> กลับไปหน้า index</a></h3>
+
+    <form action="">
+        <div>
+            <label for="firstname">ชื่อจริง</label>
+            <!-- type ชนิด input ที่รับเข้ามา -->
+            <!-- required บังคับให้ป้อน input -->
+            <input type="text" name="fname" placeholder="ป้อนชื่อจริง" required>
+        </div>
+        <div>
+            <label for="lastname">นามสกุล</label>
+            <input type="text" name="lname" placeholder="ป้อนนามสกุล">
+        </div>
+        <div>
+            <label for="email">email</label>
+            <input type="email" name="email" placeholder="email">
+        </div>
+        <div>
+            <label for="password">password</label>
+            <input type="password" name="password" placeholder="">
+        </div>
+        <div>
+            <label for="">ที่อยู่</label>
+            <textarea name="" id="" cols="30" rows="10">บ้าน</textarea>
+        </div>
+        <div>
+            <label for="number">อายุ</label>
+            <!-- min กำหนดค่าตำ่สุด -->
+            <!-- max กำหนดค่าสูงสุด -->
+            <!-- value กำหนดค่าเริ่มต้น -->
+            <!-- readonly ห้ามเปลี่ยนแปลง -->
+            <input type="number" name="age" min="0" max="5" value="2" readonly>
+        </div>
+        <div>
+            <label for="">วันเกิด</label>
+            <input type="date" name="birdthdate" id="">
+        </div>
+        <div>
+            <label for="">เบอร์โทรศัพท์</label>
+            <input type="tel" name="tel" id="">
+        </div>
+        <div>
+            <label for="">สีที่ชอบ</label>
+            <input type="color" name="color" id="">
+        </div>
+        <div>
+            <label for="">ช่วงตัวเลข</label>
+            <input type="range" name="rangenumber" value="1">
+        </div>
+
+        <!-- drop down -->
+        <div>
+            <label for="">ระดับการศึกษา</label>
+            <select name="edu" id="">
+                <option value="มัธยมศึกษา">มัธยมศึกษา</option>
+                <!-- selected กำหนดตัวเลือกเริ่มต้น -->
+                <option value="ปริญญาตรี" selected>ปริญญาตรี</option>
+                <option value="ปริญญาโท">ปริญญาโท</option>
+                <option value="ปริญญาเอก">ปริญญาเอก</option>
+            </select>
+        </div>
+
+        <!-- radio ถ้ากำหนด name ไม่เหมือนกันจะสามารถเลือกตัวเลือกได้มากกว่า 1 -->
+        <div>
+            <label for="">เพศ</label>
+            <input type="radio" name="gender">เพศชาย
+            <input type="radio" name="gender">เพศหญิง
+            <input type="radio" name="gender">อื่นๆ
+        </div>
+
+        <div>
+            <label for="">สิ่งที่ชอบ:</label>
+            <input type="checkbox" name="fav" id="">อ่านหนังสือ
+            <input type="checkbox" name="fav" id="">เล่นเกม
+            <input type="checkbox" name="fav" id="">ฟังเพลง
+            <input type="checkbox" name="fav" id="">ดูหนัง
+        </div>
+
+        <!-- แนบไฟล์ -->
+        <div>
+            <label for="">แนบไฟล์</label>
+            <input type="file" name="" id="">
+        </div>
+
+        <!-- แนบ link -->
+        <div>
+            <label for="">link</label>
+            <input type="url" name="" id="">
+        </div>
+
+        <!-- ปุ่ม submit, reset สร้างได้ 2 แบบ -->
+        <div>
+            <input type="submit" value="บันทึกข้อมูล">
+            <button type="submit">บันทึกข้อมูล</button>
+            
+            <input type="reset" name="" id="" value="ล้างข้อมูล">
+            <button type="reset">ล้างข้อมูล</button>
+        </div>
+    </form>
+
+
+
+</body>
+</html>
